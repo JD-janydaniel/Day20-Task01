@@ -26,7 +26,7 @@ async function foo(){
     for(var i=0;i<memes.length;i++){
     
     var col = document.createElement("div");
-    col.className ="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+    col.className ="col-md-4"
     col.innerHTML =`<div class="card">
      <img src="${memes[i].url}" class="card-img" >
         <div class="card-body">
