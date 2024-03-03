@@ -1,0 +1,33 @@
+body{
+    background-color:black;
+    
+}
+.heading{
+    text-align: center;
+    color:whitesmoke;
+    font-size: 120px;
+    font-style: italic;
+    font-weight: 700;
+    color:goldenrod
+}
+
+
+.card{
+    margin-left: 100px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 60px;
+    height: 600px;
+    width:600px;
+}
+.card-img{
+    height:500px;
+}
+div{
+    display: inline-block;
+}
+.card-text{
+    font-size: 25px;
+    font-weight: 800;
+}
