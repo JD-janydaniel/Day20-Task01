@@ -14,9 +14,7 @@ function create_div(tagname,attrname2,attrvalue2){
 let heading = create_header("h1","class","heading","MOST POPULAR MEME");
 document.body.append(heading);
 
-let container = document.createElement("div","class","container");
 
-let row = document.createElement("div","class","row");
 
 async function foo(){
     try{
@@ -25,6 +23,8 @@ async function foo(){
     let memes = res1.data.memes
     console.log (memes)
     for(var i=0;i<memes.length;i++){
+    let container = document.createElement("div","class","container-fluid");
+    let row = document.createElement("div","class","row");
     var col = document.createElement("div");
     col.className ="col-lg-6"
     col.innerHTML =`<div class="card">
