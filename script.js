@@ -24,15 +24,17 @@ async function foo(){
     let memes = res1.data.memes
     console.log (memes)
     for(var i=0;i<memes.length;i++){
-    
     var col = document.createElement("div");
     col.className ="col-md-4"
-    col.innerHTML =`<div class="card">
-     <img src="${memes[i].url}" class="card-img" >
-        <div class="card-body">
-            <p class="card-text">${memes[i].name}</p>
+    var card = document.createElement("div")
+    card.className = "main"
+    card.innerHTML =`<div class="main1">
+     <img src="${memes[i].url}" class="main2" >
+        <div class="main3">
+            <p class="main4">${memes[i].name}</p>
         </div>
     </div>`
+  col.append(card);
   row.append(col);
   container.append(row);
   document.body.append(container);
