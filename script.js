@@ -16,7 +16,7 @@ function create_div(tagname,attrname2,attrvalue2){
 //created a heading tag using the create_header function
 
 let heading = create_header("h1","class","heading","MOST POPULAR MEME");
-document.body.append(heading);
+document.body.append(heading);//appende the heading to the body
 //created a div tag using the create_div function
 
 let container = create_div("div","class","container");
@@ -40,15 +40,17 @@ async function get_data(){
             <p class="main4">${memes[i].name}</p>
         </div>
     </div>`
-  col.append(card);
-  row.append(col);
-  container.append(row);
-  document.body.append(container);
+  col.append(card);//appende the card to the col
+  row.append(col);//appende the col to the row
+  container.append(row);//appended the row to the container
+  document.body.append(container);//appended the container to the body
   
     }
-  }catch(error){
-    console.log("Data not found")//error handling
-  }
-  
+  }catch(error)//error handling using catch block
+  {
+    let span = document.createElement("span");
+        span.className = "span"
+        span.innerHTML = "Oops!! Data Not Found"
+   }
   }
   get_data()//function call
