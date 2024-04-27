@@ -31,7 +31,7 @@ async function get_data(){
     //console.log (memes)
     for(var i=0;i<memes.length;i++){
     var col = document.createElement("div");
-    col.className ="col-md-4"
+    col.className ="col-sm-6 col-md-4 col-lg-3"
     var card = document.createElement("div")
     card.className = "main"
     card.innerHTML =`<div class="main1">
